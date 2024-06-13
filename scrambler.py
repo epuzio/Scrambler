@@ -3,7 +3,7 @@
 import nltk
 from nltk.tokenize import word_tokenize
 from nltk.tag import pos_tag
-import markovify #much easier method
+import markovify #much easier method...
 from random import choice
 from collections import defaultdict
 import random
@@ -39,9 +39,6 @@ print(grammar)
 start_symbol = nltk.Nonterminal('S')  # You can choose any non-terminal as the start symbol
 productions = [nltk.Production(nltk.Nonterminal(tag), [word]) for tag, words in tags.items() for word in words.keys()]
 cfg = nltk.CFG(start_symbol, productions)
-
-
-
 
 productions = defaultdict(lambda: defaultdict(int)) #tag, productions, max_depth
 nonterminals = []

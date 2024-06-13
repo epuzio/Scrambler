@@ -1,5 +1,6 @@
 S -> NP VP
 S -> IN NP
+S -> SBAR UH 
 NP -> NN 
 NP -> NNP
 NP -> NNS
@@ -11,6 +12,8 @@ NP -> JJ NN
 NP -> DT JJ NN
 NP -> DT JJS NN
 NP -> NN
+NP -> NN
+NP -> NP CC NP
 NP -> PRP$ NNS
 NP -> WHNP POS
 NP -> ADJP
@@ -25,6 +28,9 @@ PP -> IN NP
 PP -> IN IN NP
 PP -> IN S
 WHNP -> WP
+ADJP -> JJ CC JJ
+ADJP -> ADJP SBAR
 ADJP -> ADVP JJ
 ADVP -> RB RBR
 ADVP -> RB
+SBAR -> IN S
